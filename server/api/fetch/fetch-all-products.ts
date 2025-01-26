@@ -70,6 +70,7 @@ export default defineEventHandler(async (event) => {
     logError("Failed to fetch all products", error);
 
     // Log and handle any database errors
-    return { statusCode: 500, message: "Internal Server Error" };
+    return { statusCode: 200, error, message: "Internal Server Error" };
+    // return { statusCode: 500, message: "Internal Server Error" };
   }
 });
