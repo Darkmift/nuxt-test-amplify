@@ -54,6 +54,6 @@ export function usePg() {
     return { client, query };
   } catch (error) {
     logError(error);
-    throw error;
+    // throw error;
   }
 }
